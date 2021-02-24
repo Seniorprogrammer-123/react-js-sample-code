@@ -1,0 +1,274 @@
+.header
+  height: 70px
+  width: 100%
+  padding: 10px 0px
+  @media(max-width: 767px)
+    display: flex 
+    background: #FFFFFF
+    height: 52px
+  @media(min-width: 768px)
+    background: #FFFFFF
+
+  &__centered
+    display: flex
+    justify-content: center
+    position: fixed
+    top: 0
+    z-index: 10
+    @media(max-width: 767px)
+      background: white
+      position: sticky
+    @media(min-width: 768px)
+      width: 100%
+  
+  &__centered-white
+    display: flex
+    justify-content: center
+    position: fixed
+    top: 0
+    z-index: 10
+    background: white
+    @media(max-width: 767px)
+      background: white
+      position: sticky
+    @media(min-width: 768px)
+      width: 100%
+
+  &-transparent
+    justify-content: center
+    border-bottom: 1px solid rgba(120, 143, 217, 0.4)
+    background-color: #f0f8ff00 !important
+    @media(max-width: 767px)
+      justify-content: space-between
+    @media(min-width: 768px)
+      margin: 0px 50px     
+      max-width: 768px
+    @media(min-width: 992px)
+      max-width: 830px
+
+  &-white
+    justify-content: center
+    @media(max-width: 767px)
+      justify-content: space-between
+    @media(min-width: 768px)
+      margin: 0px 50px     
+      max-width: 768px
+      border-bottom: solid 1px #c6d3e5
+    @media(min-width: 992px)
+      max-width: 830px
+    
+
+  &-container
+    justify-content: center
+    @media(max-width: 767px)
+      display: flex
+      width: 100%
+      padding: 0px 20px
+  
+  &-list
+    background: #FFFFFF
+    z-index: 2
+    justify-content: center
+    a
+      text-decoration: none
+      font-family: "NanumSquare"
+      font-weight: bold
+      font-size: 14px
+      color: #0540FF !important 
+
+      &:hover
+        color: #555555 !important
+
+    &-transparent
+      display: flex
+      background-color: #f0f8ff00 !important
+      a
+        text-decoration: none
+        font-family: "NanumSquare"
+        font-weight: bold
+        color: white !important 
+        font-size: 14px
+
+
+  &__link-active
+    color: #0540FF !important
+
+  &-end
+    width: 67%  
+    a   
+      text-decoration: none
+      font-family: "NanumSquare"
+      font-weight: bold    
+      font-size: 14px
+
+  &-collapse
+    justify-content: center
+    display: none
+
+    &-visible
+      display: grid
+      justify-content: center
+      background: white
+      width: 100%
+
+  &-logo
+    @media(max-width: 767px)
+      background-image: url("./../../assets/icons/small-blue-logo.svg")
+      background-repeat: no-repeat
+      height: 21px
+      width: 120px
+      margin-right: 7%
+    @media(min-width: 768px)      
+      background-image: url("./../../assets/icons/real-buy-logo.svg")
+      background-repeat: no-repeat
+      height: 43px
+      width: 86px
+
+    &__centered
+      display: flex
+      width: 100%
+      justify-content: center
+      @media(min-width: 768px)
+        margin-left: 0
+
+    &-blue
+      @media(max-width: 767px)
+        background-image: url("./../../assets/icons/small-blue-logo.svg")
+        background-repeat: no-repeat
+        height: 21px
+        width: 86px
+      @media(min-width: 768px)      
+        background-image: url("./../../assets/icons/MainPage/logo-white.svg")
+        background-repeat: no-repeat
+        height: 43px
+        width: 86px
+      
+
+  &-item
+    @media(min-width: 768px)
+      width: 79px
+    @media(min-width: 992px)
+      width: 98px
+
+  &-long-item
+    @media(min-width: 768px)
+      width: 112px
+    @media(min-width: 992px)    
+      width: 119px
+
+  &__navbar-toggler
+    background-image: url("./../../assets/icons/toggler.svg")
+    border: none
+    background-color: white
+    height: 16px
+    width: 19px
+    background-repeat: no-repeat
+    @media(min-width: 768px)
+      display: none
+
+.navlink-end
+  display: flex
+  justify-content: flex-end
+  &-mypage
+    color: #0540FF !important
+
+.navlink-start
+  display: flex
+
+.navbar__expand
+  &-links
+    display: none
+
+    &-visible
+      display: flex
+      position: fixed
+      top: 69px
+      z-index: 2
+      width: 438px
+      height: 103px
+      background: white
+      padding: 20px 28px
+      box-shadow: 0px 4px 15px #0540FF21
+
+      @media(max-width: 991px)
+        display: none
+
+    &_width
+      width: 100%
+
+  &-transparent
+    background-color: #f0f8ff00 !important
+
+  &_link
+    color: #232323
+    font-size: 11px
+    font-family: "NanumSquareRegular"
+    margin-bottom: 10px
+    padding: 0px 0px 0px 5px
+    border-left: 0.3px solid #707070
+    &:active
+      color: red
+
+    &-first
+      padding: 0px 0px 0px 5px
+      margin-bottom: 0px
+      padding-bottom: 10px
+      color: #232323
+      font-size: 11px
+      font-family: "NanumSquareRegular"
+      border-left: 0.3px solid #707070
+
+    &-container
+      display: flex
+      justify-content: center
+
+  &-column
+    display: grid
+    height: fit-content
+    &:last-child
+      display: flex
+      justify-content: flex-end
+
+.nav-transparent-login-button
+  border-right: 1px solid #707070
+  height: 17px
+  padding-top: 0px
+  margin-top: 8px
+  margin-right: 10px
+  padding-right: 10px
+  color: white
+  @media(min-width: 768px)
+    padding-left: 75px
+  @media(min-width: 992px)
+    padding-left: 109px
+
+
+.header-collapse
+  justify-content: flex-end
+
+.nav-transparent-enter-button
+  padding: 8px 0px 0px 0px
+  color: white
+
+.nav-login-button
+  border-right: 1px solid #707070
+  height: 17px
+  padding-top: 0px
+  margin-top: 8px
+  margin-right: 10px
+  padding-right: 10px
+  color: #0540FF 
+  @media(min-width: 768px)
+    padding-left: 75px
+  @media(min-width: 992px)
+    padding-left: 109px
+
+.nav-enter-button
+  padding: 8px 0px 0px 0px
+  color: #0540FF 
+
+
+      
+    
+
+
